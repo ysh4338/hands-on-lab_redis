@@ -17,7 +17,7 @@ public class DemoApplication {
 
     public DemoApplication() {
         // Replace "redis-cluster-endpoint" with the endpoint of your Elasticache Redis cluster
-        jedis = new Jedis("demo-redis.yww855.ng.0001.apn2.cache.amazonaws.com");
+        jedis = new Jedis("INPUT_REDIS_ENDPOINT");
     }
 
     @GetMapping("/")
